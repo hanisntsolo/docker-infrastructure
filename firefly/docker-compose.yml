@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  firefly:
+    image: fireflyiii/core:latest
+    container_name: firefly
+    restart: always
+    ports:
+      - "1082:8080"
+    volumes:
+      - ./docker/firefly/data:/var/www/firefly-iii/storage
+      - ./docker/firefly/firefly_iii_upload:/var/www/html/storage/upload 
+    environment:
+      - APP_KEY=ZhTIN4aDoQo66uOPxqk8c8jMY9H6AVrE
+      - DB_CONNECTION=mysql
+      - DB_HOST=db
+      - DB_DATABASE=firefly
+      - DB_USERNAME=firefly
+      - DB_PASSWORD=zaq12wsx
+      - DOCKER_HUB_USERNAME=${DOCKER_HUB_USERNAME}
+      - DOCKER_HUB_PASSWORD=${DOCKER_HUB_PASSWORD}
+    depends_on:
+      - db
+    networks:
+      - firefly_network
+
+  db:
+    image: mysql:5.7
+    container_name: firefly_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: zaq12wsx
+      MYSQL_DATABASE: firefly
+      MYSQL_USER: firefly
+      MYSQL_PASSWORD: zaq12wsx
+    volumes:
+      - ./docker/firefly/db_data:/var/lib/mysql
+    ports:
+      - "3308:3306"
+    networks:
+      - firefly_network
+
+networks:
+  firefly_network:
+    driver: bridge

@@ -1,0 +1,45 @@
+version: '3'
+
+# Create a custom network for the containers to communicate
+networks:
+  wordpress_network:
+
+services:
+
+  # WordPress service
+  wordpress:
+    image: wordpress
+    container_name: wordpress
+    restart: always
+    ports:
+      - 1081:80
+    networks:
+      - wordpress_network
+    environment:
+      - WORDPRESS_DB_HOST=mysql
+      - WORDPRESS_DB_NAME=wordpress
+      - WORDPRESS_DB_USER=wordpressuser
+      - WORDPRESS_DB_PASSWORD=zaq12wsx
+    volumes:
+      - wordpress_data:/var/www/html
+
+  # MySQL database service
+  mysql:
+    image: mariadb
+    container_name: wordpress_mysql
+    restart: always
+    networks:
+      - wordpress_network
+    environment:
+      - MYSQL_ROOT_PASSWORD=zaq12wsx
+      - MYSQL_DATABASE=wordpress
+      - MYSQL_USER=wordpressuser
+      - MYSQL_PASSWORD=zaq12wsx
+    ports:
+      - "3310:3306"
+    volumes:
+      - mysql_wordpress_data:/var/lib/mysql
+
+volumes:
+  wordpress_data:
+  mysql_wordpress_data:

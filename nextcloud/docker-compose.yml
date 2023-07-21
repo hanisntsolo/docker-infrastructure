@@ -1,0 +1,45 @@
+version: '3'
+
+# Create a custom network for the containers to communicate
+networks:
+  nextcloud_network:
+
+services:
+
+  # Nextcloud service
+  nextcloud:
+    image: nextcloud
+    container_name: nextcloud
+    restart: always
+    ports:
+      - 1080:80
+    networks:
+      - nextcloud_network
+    environment:
+      - MYSQL_HOST=mysql
+      - MYSQL_DATABASE=nextcloud
+      - MYSQL_USER=nextclouduser
+      - MYSQL_PASSWORD=zaq12wsx
+    volumes:
+      - nextcloud_data:/var/www/html
+
+  # MySQL database service
+  mysql:
+    image: mariadb
+    container_name: nextcloud_mysql
+    restart: always
+    networks:
+      - nextcloud_network
+    environment:
+      - MYSQL_ROOT_PASSWORD=zaq12wsx
+      - MYSQL_DATABASE=nextcloud
+      - MYSQL_USER=nextclouduser
+      - MYSQL_PASSWORD=zaq12wsx
+    ports:
+      - "3312:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  nextcloud_data:
+  mysql_data:
