@@ -7,11 +7,11 @@ services:
     restart: always
     ports:
       - 84:80
-      - 3012:3012
+      - 3014:3014
     environment:
       - WEBSOCKET_ENABLED=true
       - SIGNUPS_ALLOWED=true
       - DOMAIN=https://bitwarden.hanisntsolo.online # Replace with your domain name or IP address
-      - ROCKET_PORT=3012
+      - ROCKET_PORT=3014
     volumes:
       - /docker/bitwarden/bw-data:/data
