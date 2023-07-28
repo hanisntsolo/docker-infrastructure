@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  bitwarden:
+    image: bitwardenrs/server:latest
+    container_name: bitwarden
+    restart: always
+    ports:
+      - 84:80
+      - 3012:3012
+    environment:
+      - WEBSOCKET_ENABLED=true
+      - SIGNUPS_ALLOWED=true
+      - DOMAIN=https://bitwarden.hanisntsolo.online # Replace with your domain name or IP address
+      - ROCKET_PORT=3012
+    volumes:
+      - /docker/bitwarden/bw-data:/data
