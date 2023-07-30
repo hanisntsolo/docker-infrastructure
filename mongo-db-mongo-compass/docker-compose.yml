@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  mongodb:
+    image: mongo:latest # You can update this to the latest MongoDB version compatible with WiredTiger 5
+    container_name: mongodb-container
+    restart: always
+    volumes:
+      - mongodb_data:/data/db
+    ports:
+      - 27017:27017
+    command: --bind_ip_all --auth # Add any other MongoDB configurations as needed
+    networks:
+      - mongo-network
+
+networks:
+  mongo-network:
+
+volumes:
+  mongodb_data:
+    driver: local
+
