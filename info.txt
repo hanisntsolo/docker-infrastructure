@@ -1,2 +1,6 @@
 docekrhubusername - ds.pratap1997@gmail.com
 dockerhubpass - zaq12wsxcde3
+just update dmz on rounter with ip address keep pppoe as it is an it will start working.
+for firefly make appropritate directories udpate envs and youre done, it might fail in the first run remove any firefly resources and try again it will work smoothly.
+# for Bitwarden
+The new server image was needed to run it and it works like a charm just user vaultwarden instead of bitwardenrs in the docker-compose.yml

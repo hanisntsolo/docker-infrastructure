@@ -16,6 +16,7 @@ services:
     networks:
       - nextcloud_network
     environment:
+      - NEXTCLOUD_TRUSTED_DOMAINS=https://nextcloud.hanisntsolo.online
       - MYSQL_HOST=mysql
       - MYSQL_DATABASE=nextcloud
       - MYSQL_USER=nextclouduser
