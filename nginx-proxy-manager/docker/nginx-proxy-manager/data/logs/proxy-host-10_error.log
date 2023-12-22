@@ -1,0 +1,1 @@
+2023/12/22 10:00:18 [error] 226#226: *50 connect() failed (111: Connection refused) while connecting to upstream, client: 195.211.77.140, server: bitwarden.hanisntsolo.com, request: "HEAD / HTTP/1.1", upstream: "http://180.233.121.154:3014/", host: "bitwarden.hanisntsolo.com"
