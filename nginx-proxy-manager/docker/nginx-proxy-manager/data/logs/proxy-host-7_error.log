@@ -1,0 +1,1 @@
+2023/12/20 18:42:56 [warn] 174#174: *3827 using uninitialized "server" variable while logging request, client: 198.235.24.205, server: firefly.hanisntsolo.online, request: "GET /login HTTP/1.1", host: "firefly.hanisntsolo.online"

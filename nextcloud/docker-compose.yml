@@ -22,7 +22,10 @@ services:
       - MYSQL_USER=nextclouduser
       - MYSQL_PASSWORD=zaq12wsx
     volumes:
-      - nextcloud_data:/var/www/html
+      # host drive
+      # - nextcloud_data:/var/www/html
+      # external ssd 
+      - /media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/nextcloud_nextcloud_data:/var/www/html
 
   # MySQL database service
   mysql:
@@ -39,8 +42,19 @@ services:
     ports:
       - "3312:3306"
     volumes:
+      # host drive
       - mysql_data:/var/lib/mysql
-
+      # external ssd
+      # - /media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/nextcloud_mysql_data:/var/lib/mysql
 volumes:
-  nextcloud_data:
+  # On host drive
+  # nextcloud_data:
   mysql_data:
+  # On External SSD
+  # On host drive
+  # nextcloud_data:/media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/nextcloud_nextcloud_data
+  # mysql_data:/media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/nextcloud_mysql_data
+  # On External SSD
+
+  # /media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/nextcloud_nextcloud_data:/var/www/html
+  # /media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/nextcloud_mysql_data:/var/lib/mysql

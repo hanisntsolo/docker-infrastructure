@@ -1,0 +1,1 @@
+2023/12/18 21:47:01 [warn] 171#171: *5864 using uninitialized "server" variable while logging request, client: 199.45.154.16, server: bitwarden.hanisntsolo.online, request: "GET / HTTP/1.1", host: "bitwarden.hanisntsolo.online:443"
