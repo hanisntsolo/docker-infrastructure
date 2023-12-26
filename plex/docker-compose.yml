@@ -1,0 +1,93 @@
+---
+version: "2.1"
+services:
+  plex:
+    image: lscr.io/linuxserver/plex:latest
+    container_name: plex
+    restart: always
+    # network_mode: host
+    ports:
+      - "32400:32400"  # Plex Web interface port
+      - "3005:3005"    # Plex companion service port
+      - "8324:8324"    # Plex DLNA service port
+      - "32469:32469"  # Plex discovery service port
+      - "1900:1900"    # Plex UPnP service port
+      - "32410:32410"  # Plex network service port
+      - "32412:32412"  # Plex network service port
+      - "32413:32413"  # Plex network service port
+      - "32414:32414"  # Plex network service port
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+      - VERSION=docker
+      - PLEX_CLAIM=claim-kMrA2MCTc7gNy5VLxzhs
+    volumes:
+      - /media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/plexms/config:/config
+      - /media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/plexms/transcodes:/tv
+      - /media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/plexms/media:/movies
+
+# version: '3.7'
+# services:
+#   plex:
+#     image: plexinc/pms-docker
+#     restart: unless-stopped
+#     container_name: plexms
+#     ports:
+#       - "32400:32400"
+#       - "3005:3005"
+#       - "8324:8324"
+#       - "32469:32469"
+#       - "1900:1900"
+#       - "32410:32410"
+#       - "32412:32412"
+#       - "32413:32413"
+#       - "32414:32414"
+#     environment:
+#       - PUID=1000
+#       - PGID=1000
+#       - TZ=Europe/London
+#       - PLEX_CLAIM=claim-q1MVWmX2axz6cPze5PG3
+#       - HOSTNAME=PlexServer
+#     volumes:
+#       - media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/plexms/config:/config
+#       - media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/plexms/transcodes:/transcode
+#       - media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/plexms/media:/media
+#      # - media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/plexms/config:/config:rw
+#    volumes:
+#      - plex-config:/config
+#      - plex-transcode:/transcode
+#      - plex-media:/media
+
+#volumes:
+#  plex-config:
+#    type: bind
+#    source: media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/plexms/config
+#    target: /config
+    # external: true
+    # driver: local
+    # driver_opts:
+      # type: "none"
+      # o: "bind"
+      # device: "media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/plexms/config"
+#  plex-transcode:
+#    type: bind
+#    source: media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/plexms/transcodes
+#    target: /transcode
+    # external: true
+    # driver: local
+    # driver_opts:
+      # type: "none"
+      # o: "bind"
+      # device: "media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/plexms/transcodes"
+#  plex-media:
+#    type: bind
+#    source: media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/plexms/media
+#    target: /media
+    # external: true
+    # driver: local
+    # driver_opts:
+      # type: "none"
+      # o: "bind"
+      # device: "media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/plexms/media"
+

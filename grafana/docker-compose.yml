@@ -1,0 +1,9 @@
+grafana:
+    image: grafana/grafana:7.5.7
+    container_name: grafana
+    ports:
+      - 8086:3000
+    restart: always
+    volumes:
+      - /media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/grafana/provisioning/datasources:/etc/grafana/provisioning/datasources
+      - /media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/grafana/grafana-data:/var/lib/grafana

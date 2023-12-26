@@ -1,0 +1,1 @@
+2023/12/24 02:45:49 [warn] 543#543: *2074 using uninitialized "server" variable while logging request, client: 199.45.155.33, server: plex.hanisntsolo.com, request: "GET / HTTP/1.1", host: "plex.hanisntsolo.com:443"
