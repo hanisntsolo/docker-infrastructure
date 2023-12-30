@@ -1,0 +1,1 @@
+2023/12/29 06:08:11 [warn] 1215#1215: *1226 using uninitialized "server" variable while logging request, client: 199.45.154.16, server: jenkins.hanisntsolo.com, request: "GET / HTTP/1.1", host: "jenkins.hanisntsolo.com:443"

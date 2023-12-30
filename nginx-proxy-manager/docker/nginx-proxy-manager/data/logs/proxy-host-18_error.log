@@ -1,0 +1,1 @@
+2023/12/27 06:03:41 [warn] 191#191: *1090 using uninitialized "server" variable while logging request, client: 199.45.155.34, server: dozzle.hanisntsolo.com, request: "GET / HTTP/1.1", host: "dozzle.hanisntsolo.com:443"
