@@ -278,3 +278,6 @@
 [31/Dec/2023:19:03:21 +0000] 400 - GET http localhost "/" [Client 104.152.52.10] [Length 252] [Gzip -] "-" "-"
 [31/Dec/2023:19:06:07 +0000] 200 - GET http 180.233.121.154 "/" [Client 149.50.96.45] [Length 1033] [Gzip -] "Hello World/1.0" "-"
 [31/Dec/2023:19:42:55 +0000] 400 - GET http 180.233.121.154 "/" [Client 107.170.228.46] [Length 252] [Gzip -] "Mozilla/5.0 zgrab/0.x" "-"
+[31/Dec/2023:19:50:50 +0000] 200 - GET http 180.233.121.154 "/" [Client 34.140.248.32] [Length 568] [Gzip 1.86] "python-requests/2.31.0" "-"
+[31/Dec/2023:20:02:44 +0000] 200 - GET http 180.233.121.154 "/" [Client 162.216.149.229] [Length 1033] [Gzip -] "Expanse, a Palo Alto Networks company, searches across the global IPv4 space multiple times per day to identify customers&#39; presences on the Internet. If you would like to be excluded from our scans, please send IP addresses/domains to: scaninfo@paloaltonetworks.com" "-"
+[31/Dec/2023:20:09:53 +0000] 400 - - http localhost "-" [Client 181.214.166.113] [Length 154] [Gzip -] "-" "-"

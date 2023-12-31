@@ -25,6 +25,8 @@ services:
   db:
     image: jc21/mariadb-aria:latest
     restart: always
+    ports:
+      - 3304:3306
     environment:
       MYSQL_ROOT_PASSWORD: pass.database
       MYSQL_DATABASE: npm
