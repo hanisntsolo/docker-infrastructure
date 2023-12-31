@@ -1,1 +1,0 @@
-2023/12/28 05:49:34 [warn] 191#191: *135 using uninitialized "server" variable while logging request, client: 199.45.155.17, server: nginx-proxy.hanisntsolo.com, request: "GET / HTTP/1.1", host: "nginx-proxy.hanisntsolo.com:443"

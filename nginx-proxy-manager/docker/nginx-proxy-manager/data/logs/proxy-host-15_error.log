@@ -1,1 +1,0 @@
-2023/12/24 09:03:26 [warn] 192#192: *1287 using uninitialized "server" variable while logging request, client: 199.45.155.16, server: port.hanisntsolo.com, request: "GET / HTTP/1.1", host: "port.hanisntsolo.com:443"
