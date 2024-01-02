@@ -1,1 +1,4 @@
 [31/Dec/2023:19:13:46 +0000] - 200 200 - GET https dozzle.hanisntsolo.online "/.git/config" [Client 54.161.99.216] [Length 3797] [Gzip 2.09] [Sent-to 180.233.121.154] "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36" "-"
+[01/Jan/2024:04:33:52 +0000] - 200 200 - GET https dozzle.hanisntsolo.online "/" [Client 198.235.24.128] [Length 7948] [Gzip -] [Sent-to 180.233.121.154] "-" "-"
+[01/Jan/2024:18:30:27 +0000] - 200 200 - GET http dozzle.hanisntsolo.online "/" [Client 34.249.11.20] [Length 7921] [Gzip -] [Sent-to 180.233.121.154] "Mozilla/5.0 (compatible; NetcraftSurveyAgent/1.0; +info@netcraft.com)" "-"
+[02/Jan/2024:12:40:24 +0000] - 200 200 - GET http dozzle.hanisntsolo.online "/" [Client 199.45.155.35] [Length 3797] [Gzip 2.09] [Sent-to 180.233.121.154] "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)" "-"

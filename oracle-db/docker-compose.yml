@@ -1,0 +1,24 @@
+version: '3.7'
+
+services:
+  oracle-db:
+    image: container-registry.oracle.com/database/express:latest
+    container_name: oracle-express-container
+    restart: always
+    ports:
+      - "9440:1521" # This port is used while connecting from db broser applications.
+      - "9441:5500"
+    environment:
+      - ORACLE_SID=XE # this is very important else the container will not start.
+      - ORACLE_PDB=ORCLPDB1
+      - ORACLE_PWD=zaq12wsx
+      - ORACLE_CHARACTERSET=AL32UTF8
+      - ORACLE_ALLOW_REMOTE=true
+    volumes:
+      - /media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/oracle-db/data:/opt/oracle/oradata
+    networks:
+      - oracle_network
+
+networks:
+  oracle_network:
+    driver: bridge

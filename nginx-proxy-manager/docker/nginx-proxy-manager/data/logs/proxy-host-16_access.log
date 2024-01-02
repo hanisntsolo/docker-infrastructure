@@ -1,0 +1,3 @@
+[31/Dec/2023:21:13:00 +0000] - 200 200 - GET https wordpress.hanisntsolo.com "/" [Client 49.36.58.245] [Length 14507] [Gzip -] [Sent-to 180.233.121.154] "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/118.0" "https://nginx-proxy.hanisntsolo.com/"
+[01/Jan/2024:16:22:37 +0000] - 200 200 - GET https wordpress.hanisntsolo.com "/" [Client 52.55.47.96] [Length 84489] [Gzip -] [Sent-to 180.233.121.154] "-" "-"
+[01/Jan/2024:20:03:24 +0000] - 200 200 - GET http wordpress.hanisntsolo.com "/" [Client 3.249.207.150] [Length 84288] [Gzip -] [Sent-to 180.233.121.154] "Mozilla/5.0 (compatible; NetcraftSurveyAgent/1.0; +info@netcraft.com)" "-"

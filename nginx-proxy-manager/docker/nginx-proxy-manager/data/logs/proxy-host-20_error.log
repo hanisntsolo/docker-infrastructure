@@ -1,0 +1,1 @@
+2024/01/01 03:57:24 [warn] 785#785: *99 using uninitialized "server" variable while logging request, client: 199.45.155.33, server: heimdall.hanisntsolo.com, request: "GET / HTTP/1.1", host: "heimdall.hanisntsolo.com:443"

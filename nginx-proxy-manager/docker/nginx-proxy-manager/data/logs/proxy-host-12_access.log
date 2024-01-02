@@ -1,0 +1,2 @@
+[01/Jan/2024:09:03:44 +0000] - 403 403 - GET http jenkins.hanisntsolo.com "/" [Client 205.210.31.176] [Length 553] [Gzip -] [Sent-to 180.233.121.154] "-" "-"
+[01/Jan/2024:18:02:49 +0000] - 403 403 - GET http jenkins.hanisntsolo.com "/" [Client 54.171.186.74] [Length 541] [Gzip -] [Sent-to 180.233.121.154] "Mozilla/5.0 (compatible; NetcraftSurveyAgent/1.0; +info@netcraft.com)" "-"
