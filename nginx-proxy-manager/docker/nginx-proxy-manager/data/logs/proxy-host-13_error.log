@@ -1,0 +1,1 @@
+2024/01/18 12:41:48 [warn] 195#195: *3167 using uninitialized "server" variable while logging request, client: 199.45.155.35, server: nextcloud.hanisntsolo.com, request: "GET / HTTP/1.1", host: "nextcloud.hanisntsolo.com:443"

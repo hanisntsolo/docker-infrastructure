@@ -1,1 +1,2 @@
-2024/01/01 03:25:47 [warn] 533#533: *75 using uninitialized "server" variable while logging request, client: 199.45.155.19, server: nginx-proxy.hanisntsolo.com, request: "GET / HTTP/1.1", host: "nginx-proxy.hanisntsolo.com:443"
+2024/01/17 19:28:58 [warn] 195#195: *508 using uninitialized "server" variable while logging request, client: 167.94.145.58, server: nginx-proxy.hanisntsolo.com, request: "GET / HTTP/1.1", host: "nginx-proxy.hanisntsolo.com:443"
+2024/01/18 02:49:38 [warn] 549#549: *1007 using uninitialized "server" variable while logging request, client: 199.45.155.32, server: nginx-proxy.hanisntsolo.com, request: "GET / HTTP/1.1", host: "nginx-proxy.hanisntsolo.com:443"
