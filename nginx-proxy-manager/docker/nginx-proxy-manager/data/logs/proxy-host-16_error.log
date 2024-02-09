@@ -1,0 +1,1 @@
+2024/02/06 19:42:00 [warn] 208#208: *478 using uninitialized "server" variable while logging request, client: 199.45.154.67, server: wordpress.hanisntsolo.com, request: "GET / HTTP/1.1", host: "wordpress.hanisntsolo.com:443"

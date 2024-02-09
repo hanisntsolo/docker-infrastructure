@@ -1,0 +1,3 @@
+2024/01/30 11:41:09 [warn] 208#208: *2077 using uninitialized "server" variable while logging request, client: 167.248.133.186, server: auth-server.gangagetaways.com, request: "GET / HTTP/1.1", host: "auth-server.gangagetaways.com:443"
+2024/01/30 16:49:53 [warn] 207#207: *103 using uninitialized "server" variable while logging request, client: 167.248.133.125, server: auth-server.gangagetaways.com, request: "GET / HTTP/1.1", host: "auth-server.gangagetaways.com:443"
+2024/02/03 12:20:20 [warn] 211#211: *336 using uninitialized "server" variable while logging request, client: 199.45.155.32, server: auth-server.gangagetaways.com, request: "GET / HTTP/1.1", host: "auth-server.gangagetaways.com:443"

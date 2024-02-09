@@ -1,0 +1,2 @@
+2024/01/30 13:29:58 [warn] 208#208: *2851 using uninitialized "server" variable while logging request, client: 167.94.138.126, server: flashcards.hanisntsolo.online, request: "GET / HTTP/1.1", host: "flashcards.hanisntsolo.online:443"
+2024/02/04 18:53:26 [warn] 207#207: *132 using uninitialized "server" variable while logging request, client: 199.45.154.67, server: flashcards.hanisntsolo.online, request: "GET / HTTP/1.1", host: "flashcards.hanisntsolo.online:443"
