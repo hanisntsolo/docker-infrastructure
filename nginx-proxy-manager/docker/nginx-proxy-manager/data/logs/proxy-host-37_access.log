@@ -1,3 +1,0 @@
-[24/Apr/2024:09:38:44 +0000] - 401 401 - GET https user-management.gangagetaways.com "/" [Client 198.54.132.241] [Length 0] [Gzip -] [Sent-to 180.233.121.154] "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4692.56 Safari/537.36" "-"
-[25/Apr/2024:09:11:43 +0000] - 401 401 - GET https user-management.gangagetaways.com "/" [Client 205.210.31.54] [Length 0] [Gzip -] [Sent-to 180.233.121.154] "-" "-"
-[26/Apr/2024:12:42:21 +0000] - 401 401 - GET http user-management.gangagetaways.com "/" [Client 35.206.153.39] [Length 0] [Gzip -] [Sent-to 180.233.121.154] "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko; compatible; BW/1.2; rb.gy/oupwis) Chrome/84.0.4147.105 Safari/537.36" "-"

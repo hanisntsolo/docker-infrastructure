@@ -1,2 +1,0 @@
-2024/04/20 01:50:59 [warn] 254#254: *597 using uninitialized "server" variable while logging request, client: 199.45.155.21, server: heimdall.hanisntsolo.com, request: "GET / HTTP/1.1", host: "heimdall.hanisntsolo.com:443"
-2024/04/24 07:17:30 [warn] 385#385: *7081 using uninitialized "server" variable while logging request, client: 167.94.138.127, server: heimdall.hanisntsolo.com, request: "GET / HTTP/1.1", host: "heimdall.hanisntsolo.com:443"

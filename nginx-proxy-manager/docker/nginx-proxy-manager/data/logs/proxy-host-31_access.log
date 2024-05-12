@@ -1,6 +1,0 @@
-[23/Apr/2024:23:54:18 +0000] - - 400 - GET http gg-dev-db.gangagetaways.com "/" [Client 199.45.154.63] [Length 252] [Gzip -] [Sent-to ] "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)" "-"
-[24/Apr/2024:00:51:20 +0000] - - 301 - GET http gg-dev-db.gangagetaways.com "/" [Client 199.45.154.66] [Length 166] [Gzip -] [Sent-to 180.233.121.154] "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)" "-"
-[24/Apr/2024:00:51:27 +0000] - 401 401 - GET https gg-dev-db.gangagetaways.com "/" [Client 199.45.154.66] [Length 147] [Gzip -] [Sent-to 180.233.121.154] "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)" "-"
-[24/Apr/2024:21:48:43 +0000] - 401 401 - GET https gg-dev-db.gangagetaways.com "/" [Client 77.36.24.240] [Length 147] [Gzip -] [Sent-to 180.233.121.154] "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" "-"
-[26/Apr/2024:16:14:15 +0000] - - 301 - GET http gg-dev-db.gangagetaways.com "/" [Client 205.210.31.26] [Length 166] [Gzip -] [Sent-to 180.233.121.154] "-" "-"
-[26/Apr/2024:16:14:17 +0000] - 401 401 - GET https gg-dev-db.gangagetaways.com "/" [Client 205.210.31.26] [Length 147] [Gzip -] [Sent-to 180.233.121.154] "-" "http://180.233.121.154:80/"

@@ -1,1 +1,0 @@
-2024/04/23 23:54:18 [warn] 319#319: *4718 using uninitialized "server" variable while logging request, client: 199.45.154.63, server: gg-dev-db.gangagetaways.com, request: "GET / HTTP/1.1", host: "gg-dev-db.gangagetaways.com:443"

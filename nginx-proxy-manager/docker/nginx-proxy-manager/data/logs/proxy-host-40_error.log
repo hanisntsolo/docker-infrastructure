@@ -1,4 +1,0 @@
-2024/04/24 12:17:49 [warn] 385#385: *7652 using uninitialized "server" variable while logging request, client: 34.94.44.84, server: app.gangagetaways.com
-2024/04/25 11:30:03 [warn] 212#212: *301 using uninitialized "server" variable while logging request, client: 172.104.162.152, server: app.gangagetaways.com
-2024/04/25 15:08:41 [warn] 212#212: *621 using uninitialized "server" variable while logging request, client: 34.106.141.62, server: app.gangagetaways.com
-2024/04/26 09:32:28 [warn] 212#212: *195 using uninitialized "server" variable while logging request, client: 34.162.225.69, server: app.gangagetaways.com

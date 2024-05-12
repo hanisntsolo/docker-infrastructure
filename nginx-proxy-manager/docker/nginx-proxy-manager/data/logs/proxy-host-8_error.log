@@ -1,1 +1,0 @@
-2024/04/26 14:43:23 [warn] 212#212: *1046 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/04/0000000046 while reading upstream, client: 49.36.58.223, server: bitwarden.hanisntsolo.online, request: "GET /api/sync HTTP/2.0", upstream: "http://180.233.121.154:3014/api/sync", host: "bitwarden.hanisntsolo.online"

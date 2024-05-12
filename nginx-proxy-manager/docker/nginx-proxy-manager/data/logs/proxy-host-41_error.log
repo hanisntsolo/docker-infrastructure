@@ -1,0 +1,1 @@
+2024/05/12 06:48:34 [warn] 299#299: *1036 using uninitialized "server" variable while logging request, client: 199.45.155.26, server: feat.gangagetaways.com, request: "GET / HTTP/1.1", host: "feat.gangagetaways.com:443"
