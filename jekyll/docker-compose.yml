@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   jekyll:
-    restart: always
+#    restart: always
     build: .
     ports:
       - "4004:4000"
