@@ -1,4 +1,0 @@
-2024/01/30 12:26:38 [warn] 208#208: *2130 using uninitialized "server" variable while logging request, client: 167.248.133.37, server: plex.hanisntsolo.com, request: "GET / HTTP/1.1", host: "plex.hanisntsolo.com:443"
-2024/01/30 21:54:57 [warn] 207#207: *931 using uninitialized "server" variable while logging request, client: 199.45.155.35, server: plex.hanisntsolo.com, request: "GET / HTTP/1.1", host: "plex.hanisntsolo.com:443"
-2024/02/03 06:59:33 [warn] 211#211: *23 using uninitialized "server" variable while logging request, client: 199.45.155.32, server: plex.hanisntsolo.com, request: "GET / HTTP/1.1", host: "plex.hanisntsolo.com:443"
-2024/02/06 08:38:51 [warn] 206#206: *206 using uninitialized "server" variable while logging request, client: 199.45.154.51, server: plex.hanisntsolo.com, request: "GET / HTTP/1.1", host: "plex.hanisntsolo.com:443"

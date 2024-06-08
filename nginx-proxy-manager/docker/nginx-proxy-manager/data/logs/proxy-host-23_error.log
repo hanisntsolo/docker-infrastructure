@@ -1,1 +1,0 @@
-2024/02/03 20:52:54 [warn] 206#206: *383 using uninitialized "server" variable while logging request, client: 199.45.155.35, server: grafana.hanisntsolo.online, request: "GET / HTTP/1.1", host: "grafana.hanisntsolo.online:443"

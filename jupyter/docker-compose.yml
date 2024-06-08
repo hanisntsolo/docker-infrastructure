@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+  jupyter:
+    image: jupyter/base-notebook:latest
+    container_name: jupyter_notebook
+    restart: always
+    ports:
+      - "18888:8888"
+    volumes:
+      - /media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/jupyter/notebooks:/home/jovyan/work
+    environment:
+      - JUPYTER_TOKEN=hanisntsolo
+    networks:
+      my_network:
+        ipv4_address: 173.26.0.2
+
+#  spyder:
+#    image: spyderide/spyder:latest
+#    ports:
+#      - "18889:8889"
+#    volumes:
+#      - /media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/spyder/scripts:/scripts
+#    environment:
+#      - PYTHONPATH=/scripts
+#    networks:
+#      my_network:
+#        ipv4_address: 173.26.0.3
+
+networks:
+  my_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 173.26.0.0/16

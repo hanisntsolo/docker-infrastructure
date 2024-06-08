@@ -1,1 +1,0 @@
-2024/02/03 12:44:44 [warn] 211#211: *369 using uninitialized "server" variable while logging request, client: 199.45.154.50, server: gg-dev-db.gangagetaways.com, request: "GET / HTTP/1.1", host: "gg-dev-db.gangagetaways.com:443"

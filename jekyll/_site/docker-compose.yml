@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  jekyll:
+    restart: always
+    build: .
+    ports:
+      - "4004:4000"
+    volumes:
+      - .:/usr/src/app

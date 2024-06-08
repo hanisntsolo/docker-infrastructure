@@ -1,0 +1,1 @@
+never perform docker compose down here this will delete all notebooks on lab

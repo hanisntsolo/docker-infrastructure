@@ -1,1 +1,0 @@
-2024/01/30 13:32:59 [warn] 208#208: *2889 using uninitialized "server" variable while logging request, client: 162.142.125.217, server: gg-uat-db.gangagetaways.com, request: "GET / HTTP/1.1", host: "gg-uat-db.gangagetaways.com:443"

@@ -1,3 +1,0 @@
-2024/01/30 08:42:20 [warn] 208#208: *724 using uninitialized "server" variable while logging request, client: 167.248.133.184, server: jenkins.hanisntsolo.online, request: "GET / HTTP/1.1", host: "jenkins.hanisntsolo.online:443"
-2024/02/04 18:07:24 [warn] 207#207: *80 a client request body is buffered to a temporary file /tmp/nginx/body/6/01/0000000016, client: 140.82.115.109, server: jenkins.hanisntsolo.online, request: "POST /github-webhook/ HTTP/1.1", host: "jenkins.hanisntsolo.online"
-2024/02/04 18:07:24 [warn] 207#207: *81 a client request body is buffered to a temporary file /tmp/nginx/body/7/01/0000000017, client: 140.82.115.87, server: jenkins.hanisntsolo.online, request: "POST /github-webhook/ HTTP/1.1", host: "jenkins.hanisntsolo.online"

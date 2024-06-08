@@ -1,1 +1,0 @@
-2024/02/02 13:17:09 [warn] 208#208: *513 using uninitialized "server" variable while logging request, client: 167.248.133.182, server: gg-prod-db.gangagetaways.com, request: "GET / HTTP/1.1", host: "gg-prod-db.gangagetaways.com:443"
