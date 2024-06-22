@@ -1,0 +1,2 @@
+2024/06/20 04:26:39 [warn] 216#216: *1746 using uninitialized "server" variable while logging request, client: 199.45.155.71, server: port.hanisntsolo.com, request: "GET / HTTP/1.1", host: "port.hanisntsolo.com:443"
+2024/06/20 21:11:20 [warn] 218#218: *1828 using uninitialized "server" variable while logging request, client: 199.45.155.76, server: port.hanisntsolo.com, request: "GET / HTTP/1.1", host: "port.hanisntsolo.com:443"

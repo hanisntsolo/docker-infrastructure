@@ -1,0 +1,26 @@
+version: '3'
+services:
+  jenkins:
+    user: "1000:1000"
+    build:
+      context: ./jenkins
+      dockerfile: Dockerfile
+    container_name: jenkins
+    ports:
+      - "8090:8080"  # Jenkins web interface
+      - "50000:50000"  # Jenkins agent port
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 512M
+    volumes:
+      # - /media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/jenkins_jenkins_data/_data:/var/jenkins_home:rw
+      - jenkins_data:/var/jenkins_home:rw
+      - /var/run/docker.sock:/var/run/docker.sock:rw  # Bind Docker socket to Jenkins container
+    restart: unless-stopped
+    environment:
+      - DOCKER_GID_ON_HOST=999  # Set the GID of the 'docker' group on the host
+
+volumes:
+  jenkins_data:

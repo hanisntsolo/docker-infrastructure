@@ -1,0 +1,22 @@
+version: '3'
+services:
+  vmware-horizon:
+    image: exotime/vmware-horizon-docker
+    privileged: true
+    container_name: vmware-client
+    restart: always
+    environment:
+      - DISPLAY=${DISPLAY}
+      - USER=root  # Set USER environment variable as an example; adjust as necessary
+      - XAUTHORITY=/tmp/.docker.xauth  # Specify Xauthority file path
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ${HOME}/.vmware:/root/.vmware/
+      - /etc/localtime:/etc/localtime:ro
+      - /dev/bus/usb:/dev/bus/usb
+      - ${XAUTHORITY}:/tmp/.docker.xauth  # Mount Xauthority file from host to container
+    devices:
+      - /dev/snd
+    ports:
+      - "8088:80"
+      - "4172:4172"

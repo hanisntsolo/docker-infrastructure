@@ -1,0 +1,40 @@
+FROM jenkins/jenkins:lts
+
+# Arguments for specifying UID and GID
+ARG USER=hanisntsolo
+ARG GROUP=docker
+ARG UID=1002
+ARG GID=1002
+
+
+USER root
+
+# Install sudo
+RUN apt-get update && apt-get install -y sudo
+
+# Install dependencies for Docker
+RUN apt-get update && apt-get install -y \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+
+# Install Docker using official installation script
+RUN curl -fsSL https://get.docker.com -o get-docker.sh
+RUN sh get-docker.sh
+
+# Add Jenkins user to the Docker group and adjust permissions on Docker socket
+# RUN usermod -aG docker jenkins && \ 
+  #  chmod 666 /var/run/docker.sock && \ 
+  #  chown root:docker /var/run/docker.sock
+# Add Jenkins user to the Docker group
+RUN usermod -aG docker hanisntsolo
+
+# Change the UID and GID of the Jenkins user
+RUN usermod -u ${UID} ${USER} && groupmod -g ${GID} ${GROUP}
+# Install Node.js and npm
+RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
+RUN apt-get install -y nodejs
+
+USER hanisntsolo

@@ -1,0 +1,1 @@
+2024/06/21 17:56:44 [warn] 216#216: *3577 using uninitialized "server" variable while logging request, client: 199.45.154.138, server: jenkins.hanisntsolo.online, request: "GET / HTTP/1.1", host: "jenkins.hanisntsolo.online:443"

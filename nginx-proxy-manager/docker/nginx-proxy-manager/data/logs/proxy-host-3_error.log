@@ -1,0 +1,3 @@
+2024/06/12 07:16:11 [warn] 216#216: *6 using uninitialized "server" variable while logging request, client: 199.45.155.16, server: nextcloud.hanisntsolo.online, request: "GET / HTTP/1.1", host: "nextcloud.hanisntsolo.online:443"
+2024/06/19 23:49:43 [warn] 216#216: *1091 using uninitialized "server" variable while logging request, client: 206.168.34.38, server: nextcloud.hanisntsolo.online, request: "GET / HTTP/1.1", host: "nextcloud.hanisntsolo.online:443"
+2024/06/21 23:17:35 [warn] 216#216: *6053 using uninitialized "server" variable while logging request, client: 199.45.155.87, server: nextcloud.hanisntsolo.online, request: "GET / HTTP/1.1", host: "nextcloud.hanisntsolo.online:443"

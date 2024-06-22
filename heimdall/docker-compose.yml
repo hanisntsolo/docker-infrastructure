@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  heimdall:
+    image: linuxserver/heimdall:latest  # Assuming you're using the official Heimdall image
+    container_name: heimdall
+    restart: always
+    ports:
+      - "8084:80"  # Mapping container port 8080 to host port 8080
+      - "8085:443"
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 512M
+    environment:
+      - HEIMDALL_LOG_LEVEL=info  # Example environment variable; adjust based on your needs
+      - DOCKER_HUB_USERNAME=hanisntsolo
+      - DOCKER_HUB_PASSWORD=zaq12wsxcde3
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Chicago
+    volumes:
+      - /media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/heimdall_data/config:/config  # Mapping a local directory to store Heimdall data
+      # - /media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/heimdall_data/app/www:/app/www
+      # - /media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/heimdall_data/database:/app/www/database
+    networks:
+      - heimdall_network
+
+networks:
+  heimdall_network:
+    driver: bridge

@@ -1,0 +1,1 @@
+2024/06/17 10:06:38 [warn] 218#218: *23 using uninitialized "server" variable while logging request, client: 199.45.154.58, server: heimdall.hanisntsolo.com, request: "GET / HTTP/1.1", host: "heimdall.hanisntsolo.com:443"

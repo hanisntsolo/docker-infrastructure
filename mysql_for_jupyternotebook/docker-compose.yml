@@ -1,0 +1,39 @@
+
+version: '3'
+ 
+services:
+  jupyter_db:
+    image: mysql:latest
+    restart: always
+    container_name: jupyter_db
+    environment:
+      MYSQL_ROOT_PASSWORD: ${JUPYTER_MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${JUPYTER_MYSQL_DATABASE}
+      MYSQL_USER: ${JUPYTER_MYSQL_USER}
+      MYSQL_PASSWORD: ${JUPYTER_MYSQL_PASSWORD}
+    ports:
+      - "18033:3306"
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 512M
+    volumes:
+      - /media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/jupyter/mysql_db_data:/var/lib/mysql
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: pma
+    links:
+      - jupyter_db
+    environment:
+      PMA_HOST: jupyter_db
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+    restart: always
+    ports:
+      - 18081:80
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 512M

@@ -1,0 +1,1 @@
+2024/06/20 00:49:16 [warn] 216#216: *1386 using uninitialized "server" variable while logging request, client: 199.45.155.71, server: port.hanisntsolo.online, request: "GET / HTTP/1.1", host: "port.hanisntsolo.online:443"
