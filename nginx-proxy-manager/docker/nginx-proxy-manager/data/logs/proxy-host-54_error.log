@@ -1,1 +1,0 @@
-2024/06/16 00:48:37 [warn] 218#218: *2347 using uninitialized "server" variable while logging request, client: 206.168.34.188, server: overleafgit.hanisntsolo.com, request: "GET / HTTP/1.1", host: "overleafgit.hanisntsolo.com:443"

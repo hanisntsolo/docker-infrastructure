@@ -1,1 +1,0 @@
-2024/06/22 05:07:13 [warn] 216#216: *6599 using uninitialized "server" variable while logging request, client: 206.168.34.122, server: jenkins.gangagetaways.com, request: "GET / HTTP/1.1", host: "jenkins.gangagetaways.com:443"

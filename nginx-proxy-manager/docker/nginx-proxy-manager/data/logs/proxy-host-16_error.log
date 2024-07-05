@@ -1,1 +1,0 @@
-2024/06/20 04:52:31 [warn] 216#216: *2329 using uninitialized "server" variable while logging request, client: 199.45.154.118, server: wordpress.hanisntsolo.com, request: "GET / HTTP/1.1", host: "wordpress.hanisntsolo.com:443"

@@ -1,1 +1,0 @@
-2024/06/21 21:36:49 [warn] 216#216: *5887 using uninitialized "server" variable while logging request, client: 162.142.125.196, server: pma.hanisntsolo.com, request: "GET / HTTP/1.1", host: "pma.hanisntsolo.com:443"

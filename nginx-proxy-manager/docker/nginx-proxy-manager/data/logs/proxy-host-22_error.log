@@ -1,1 +1,0 @@
-2024/06/22 06:52:05 [warn] 216#216: *7681 using uninitialized "server" variable while logging request, client: 138.197.113.72, server: grafana.hanisntsolo.com, request: "GET public/img/fav32.png HTTP/1.1"

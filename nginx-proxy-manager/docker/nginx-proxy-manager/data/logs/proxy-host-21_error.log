@@ -1,1 +1,0 @@
-2024/06/19 03:17:31 [warn] 217#217: *139 using uninitialized "server" variable while logging request, client: 162.142.125.194, server: heimdall.hanisntsolo.online, request: "GET / HTTP/1.1", host: "heimdall.hanisntsolo.online:443"

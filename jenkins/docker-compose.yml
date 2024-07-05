@@ -13,7 +13,7 @@ services:
       resources:
         limits:
           cpus: '1.0'
-          memory: 512M
+          memory: 4G
     volumes:
       # - /media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/jenkins_jenkins_data/_data:/var/jenkins_home:rw
       - jenkins_data:/var/jenkins_home:rw

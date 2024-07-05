@@ -1,0 +1,1 @@
+2024/07/04 15:20:43 [error] 217#217: *449 connect() failed (111: Connection refused) while connecting to upstream, client: 54.74.86.237, server: feat.gangagetaways.com, request: "GET / HTTP/1.0", upstream: "http://180.233.121.154:13000/", host: "feat.gangagetaways.com"
