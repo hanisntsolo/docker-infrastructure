@@ -1,1 +1,0 @@
-2024/07/03 22:46:02 [warn] 219#219: *1811 using uninitialized "server" variable while logging request, client: 206.168.34.193, server: port.hanisntsolo.com, request: "GET / HTTP/1.1", host: "port.hanisntsolo.com:443"

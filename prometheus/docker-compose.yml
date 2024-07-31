@@ -1,0 +1,74 @@
+version: '3.8'
+
+services:
+  prometheus:
+    restart: always
+    image: prom/prometheus:latest
+    container_name: prometheus
+    volumes:
+      - /media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - /media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/prometheus/alerts.yml:/etc/prometheus/alerts.yml:ro
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--web.enable-lifecycle'
+    ports:
+      - "9090:9090"
+    networks:
+      - monitoring
+
+  alertmanager:
+    restart: always
+    image: prom/alertmanager:latest
+    container_name: alertmanager
+    volumes:
+      - /media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/prometheus/alertmanager.yml:/etc/alertmanager/alertmanager.yml:ro
+    ports:
+      - "9093:9093"
+    networks:
+      - monitoring
+
+  node-exporter:
+    restart: always
+    image: prom/node-exporter:latest
+    container_name: node-exporter
+    ports:
+      - "9100:9100"
+    networks:
+      - monitoring
+
+  grafana:
+    restart: always
+    image: grafana/grafana:latest
+    container_name: grafana
+    ports:
+      - 8086:3000
+    networks:
+      - monitoring
+    environment:
+      - GF_SECURITY_ADMIN_USER=${JUPYTER_MYSQL_DATABASE}
+      - GF_SECURITY_ADMIN_PASSWORD=${JUPYTER_MYSQL_PASSWORD} # Change this in production!
+    volumes:
+      - /media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/grafana/provisioning/datasources:/etc/grafana/provisioning/datasources
+      - /media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/grafana/grafana-data:/var/lib/grafana
+
+  cadvisor:
+    restart: always
+    image: gcr.io/cadvisor/cadvisor:latest
+    container_name: cadvisor
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:rw
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+    ports:
+      - "9091:9091"
+    networks:
+      - monitoring
+
+networks:
+  monitoring:
+    driver: bridge
+
+volumes:
+  grafana-storage:
+    driver: local

@@ -1,1 +1,2 @@
-[04/Jul/2024:15:20:43 +0000] - 502 502 - GET https feat.gangagetaways.com "/" [Client 54.74.86.237] [Length 154] [Gzip -] [Sent-to 180.233.121.154] "Mozilla/5.0 (compatible; NetcraftSurveyAgent/1.0; +info@netcraft.com)" "-"
+[31/Jul/2024:14:37:25 +0000] - - 301 - GET http feat.gangagetaways.com "/wp-login.php" [Client 198.211.125.40] [Length 166] [Gzip -] [Sent-to 180.233.121.154] "Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:94.0) Gecko/20100101 Firefox/95.0" "-"
+[31/Jul/2024:14:37:26 +0000] - 502 502 - GET https feat.gangagetaways.com "/wp-login.php" [Client 198.211.125.40] [Length 154] [Gzip -] [Sent-to 180.233.121.154] "Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:94.0) Gecko/20100101 Firefox/95.0" "http://feat.gangagetaways.com/wp-login.php"

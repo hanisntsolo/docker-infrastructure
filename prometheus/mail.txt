@@ -1,0 +1,6 @@
+From: ds.pratap1997@gmail.com
+To: ds.pratap1997@gmail.com
+Subject: Test Email
+
+This is a test email from Alertmanager.
+

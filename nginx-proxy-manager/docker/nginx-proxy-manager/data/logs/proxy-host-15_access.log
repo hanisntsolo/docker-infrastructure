@@ -1,3 +1,1 @@
-[03/Jul/2024:22:41:33 +0000] - 200 200 - GET http port.hanisntsolo.com "/" [Client 199.45.155.67] [Length 8772] [Gzip -] [Sent-to 180.233.121.154] "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)" "-"
-[03/Jul/2024:22:46:02 +0000] - - 400 - GET http port.hanisntsolo.com "/" [Client 206.168.34.193] [Length 252] [Gzip -] [Sent-to ] "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)" "-"
-[04/Jul/2024:14:09:18 +0000] - 200 200 - GET https port.hanisntsolo.com "/" [Client 34.242.138.170] [Length 19130] [Gzip -] [Sent-to 180.233.121.154] "Mozilla/5.0 (compatible; NetcraftSurveyAgent/1.0; +info@netcraft.com)" "-"
+[31/Jul/2024:15:18:50 +0000] - 404 404 - GET http port.hanisntsolo.com "/wp-login.php" [Client 203.128.6.225] [Length 43] [Gzip -] [Sent-to 180.233.121.154] "Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:94.0) Gecko/20100101 Firefox/95.0" "-"

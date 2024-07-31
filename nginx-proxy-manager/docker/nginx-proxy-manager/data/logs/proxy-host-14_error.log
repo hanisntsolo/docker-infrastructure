@@ -1,0 +1,1 @@
+2024/07/31 20:41:50 [warn] 331#331: *2397 using uninitialized "server" variable while logging request, client: 206.168.34.222, server: nginx-proxy.hanisntsolo.com, request: "GET / HTTP/1.1", host: "nginx-proxy.hanisntsolo.com:443"

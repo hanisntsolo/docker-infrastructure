@@ -8,7 +8,7 @@ grafana:
 #        limits:
 #          cpus: '1.0'
 #          memory: 512M
-    restart: always
+#    restart: always
     volumes:
       - /media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/grafana/provisioning/datasources:/etc/grafana/provisioning/datasources
       - /media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/grafana/grafana-data:/var/lib/grafana

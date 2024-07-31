@@ -1,1 +1,1 @@
-[03/Jul/2024:00:26:06 +0000] - 502 502 - GET http blog.hanisntsolo.com "/wp-login.php" [Client 208.109.188.30] [Length 154] [Gzip -] [Sent-to 180.233.121.154] "Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:94.0) Gecko/20100101 Firefox/95.0" "-"
+[31/Jul/2024:19:23:05 +0000] - 502 502 - GET http blog.hanisntsolo.com "/" [Client 49.36.42.41] [Length 556] [Gzip -] [Sent-to 180.233.121.154] "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" "-"
