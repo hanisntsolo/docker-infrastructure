@@ -1,2 +1,0 @@
-2024/07/31 04:51:44 [warn] 217#217: *94 using uninitialized "server" variable while logging request, client: 162.142.125.196, server: firefly.hanisntsolo.com, request: "GET / HTTP/1.1", host: "firefly.hanisntsolo.com:443"
-2024/07/31 12:15:30 [warn] 218#218: *134 using uninitialized "server" variable while logging request, client: 205.210.31.248, server: firefly.hanisntsolo.com, request: "GET /login HTTP/1.1", host: "firefly.hanisntsolo.com"

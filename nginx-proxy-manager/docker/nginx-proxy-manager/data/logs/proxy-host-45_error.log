@@ -1,1 +1,0 @@
-2024/07/31 08:24:24 [warn] 218#218: *41 using uninitialized "server" variable while logging request, client: 206.168.34.122, server: epson.hanisntsolo.com, request: "GET / HTTP/1.1", host: "epson.hanisntsolo.com:443"

@@ -1,2 +1,0 @@
-2024/07/31 06:40:27 [error] 217#217: *238 connect() failed (111: Connection refused) while connecting to upstream, client: 35.171.144.152, server: uat.gangagetaways.com, request: "GET / HTTP/1.1", upstream: "http://180.233.121.154:13002/", host: "uat.gangagetaways.com"
-2024/07/31 06:40:28 [error] 217#217: *240 connect() failed (111: Connection refused) while connecting to upstream, client: 35.171.144.152, server: uat.gangagetaways.com, request: "GET / HTTP/1.1", upstream: "http://180.233.121.154:13002/", host: "uat.gangagetaways.com"

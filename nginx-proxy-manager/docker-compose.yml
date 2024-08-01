@@ -20,8 +20,8 @@ services:
       DB_MYSQL_PASSWORD: npm
       DB_MYSQL_NAME: npm
     volumes:
-      - ./docker/nginx-proxy-manager/data:/data  # Data directory for Nginx Proxy Manager
-      - ./docker/nginx-proxy-manager/letsencrypt:/etc/letsencrypt  # Let's Encrypt certificates
+      - data_volume:/data  # Data directory for Nginx Proxy Manager
+      - letsencrypt_volume:/etc/letsencrypt  # Let's Encrypt certificates
     depends_on:
       - db
     networks:
@@ -42,8 +42,9 @@ services:
       MYSQL_DATABASE: npm
       MYSQL_USER: npm
       MYSQL_PASSWORD: npm
+      MARIADB_AUTO_UPGRADE: '1'
     volumes:
-      - ./docker/nginx-proxy-manager/data/mysql:/var/lib/mysql
+      - mysql_data:/var/lib/mysql
     networks:
       - npm_default
 
@@ -51,3 +52,7 @@ networks:
   npm_default:
     external: true
     driver: bridge
+volumes:
+  data_volume:
+  letsencrypt_volume:
+  mysql_data:

@@ -1,2 +1,0 @@
-[31/Jul/2024:16:49:15 +0000] - - 301 - GET http heimdall.hanisntsolo.com "/wp-login.php" [Client 103.47.185.185] [Length 166] [Gzip -] [Sent-to 180.233.121.154] "Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:94.0) Gecko/20100101 Firefox/95.0" "-"
-[31/Jul/2024:16:49:17 +0000] - 404 404 - GET https heimdall.hanisntsolo.com "/wp-login.php" [Client 103.47.185.185] [Length 47] [Gzip 0.44] [Sent-to 180.233.121.154] "Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:94.0) Gecko/20100101 Firefox/95.0" "http://heimdall.hanisntsolo.com/wp-login.php"

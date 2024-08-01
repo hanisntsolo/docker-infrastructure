@@ -1,1 +1,0 @@
-2024/07/31 14:37:26 [error] 218#218: *325 connect() failed (111: Connection refused) while connecting to upstream, client: 198.211.125.40, server: feat.gangagetaways.com, request: "GET /wp-login.php HTTP/1.1", upstream: "http://180.233.121.154:13000/wp-login.php", host: "feat.gangagetaways.com", referrer: "http://feat.gangagetaways.com/wp-login.php"

@@ -1,2 +1,0 @@
-2024/07/31 01:51:27 [error] 217#217: *11 connect() failed (111: Connection refused) while connecting to upstream, client: 45.148.10.59, server: tenda.hanisntsolo.com, request: "GET / HTTP/1.1", upstream: "http://180.233.121.154:8080/", host: "tenda.hanisntsolo.com"
-2024/07/31 20:27:29 [error] 331#331: *2156 connect() failed (111: Connection refused) while connecting to upstream, client: 205.169.39.24, server: tenda.hanisntsolo.com, request: "GET / HTTP/2.0", upstream: "http://180.233.121.154:8080/", host: "tenda.hanisntsolo.com"

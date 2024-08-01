@@ -1,2 +1,0 @@
-[31/Jul/2024:03:02:29 +0000] - 200 200 - GET http marks.hanisntsolo.com "/" [Client 143.110.177.126] [Length 426] [Gzip 1.90] [Sent-to 180.233.121.154] "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" "-"
-[31/Jul/2024:03:02:30 +0000] - 200 200 - GET https marks.hanisntsolo.com "/" [Client 143.110.177.126] [Length 426] [Gzip 1.90] [Sent-to 180.233.121.154] "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" "-"

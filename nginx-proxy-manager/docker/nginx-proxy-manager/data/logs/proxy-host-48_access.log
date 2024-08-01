@@ -1,3 +1,0 @@
-[30/Jul/2024:23:09:01 +0000] - 502 502 - GET http mysql.hanisntsolo.com "/" [Client 87.236.176.164] [Length 154] [Gzip -] [Sent-to 180.233.121.154] "Mozilla/5.0 (compatible; InternetMeasurement/1.0; +https://internet-measurement.com/)" "-"
-[31/Jul/2024:00:58:28 +0000] - 502 502 - GET https mysql.hanisntsolo.com "/" [Client 87.236.176.130] [Length 154] [Gzip -] [Sent-to 180.233.121.154] "Mozilla/5.0 (compatible; InternetMeasurement/1.0; +https://internet-measurement.com/)" "-"
-[31/Jul/2024:02:27:57 +0000] - 502 502 - GET https mysql.hanisntsolo.com "/" [Client 194.55.186.87] [Length 154] [Gzip -] [Sent-to 180.233.121.154] "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0.1) Gecko/20100101 Firefox/4.0.1" "-"
