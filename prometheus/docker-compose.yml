@@ -15,11 +15,15 @@ services:
       - "9090:9090"
     networks:
       - monitoring
+    depends_on:
+      - alertmanager
 
   alertmanager:
     restart: always
     image: prom/alertmanager:latest
     container_name: alertmanager
+    command:
+      - '--config.file=/etc/alertmanager/alertmanager.yml'
     volumes:
       - /media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/prometheus/alertmanager.yml:/etc/alertmanager/alertmanager.yml:ro
     ports:
@@ -47,6 +51,12 @@ services:
     environment:
       - GF_SECURITY_ADMIN_USER=${JUPYTER_MYSQL_DATABASE}
       - GF_SECURITY_ADMIN_PASSWORD=${JUPYTER_MYSQL_PASSWORD} # Change this in production!
+      - GF_SMTP_ENABLED=true
+      - GF_SMTP_HOST=smtp.gmail.com:587
+      - GF_SMTP_USER=ds.pratap1997@gmail.com
+      - GF_SMTP_PASSWORD=${GF_SMTP_PASSWORD}
+      - GF_SMTP_FROM_ADDRESS=ds.pratap1997@gmail.com
+      - GF_SMTP_FROM_NAME=Grafana Alerts
     volumes:
       - /media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/grafana/provisioning/datasources:/etc/grafana/provisioning/datasources
       - /media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/grafana/grafana-data:/var/lib/grafana
@@ -61,7 +71,7 @@ services:
       - /sys:/sys:ro
       - /var/lib/docker/:/var/lib/docker:ro
     ports:
-      - "9091:9091"
+      - 9091:8080
     networks:
       - monitoring
 
