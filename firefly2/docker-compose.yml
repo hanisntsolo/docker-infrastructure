@@ -36,7 +36,7 @@ services:
     networks:
       - firefly_iii
     volumes:
-      - firefly_iii_db:/var/lib/mysql
+      - /media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/fireflyDBdata:/var/lib/mysql
     ports:
       - 7308:3306
     deploy:
@@ -63,7 +63,6 @@ services:
 
 volumes:
    firefly_iii_upload:
-   firefly_iii_db:
 
 networks:
   firefly_iii:
