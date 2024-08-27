@@ -16,7 +16,8 @@ services:
     environment:
       - WEBSOCKET_ENABLED=true
       - SIGNUPS_ALLOWED=true
-      - DOMAIN=https://bitwarden.hanisntsolo.online # Replace with your domain name or IP address
+      - DOMAIN=https://bitwarden.hanisntsolo.com # Replace with your domain name or IP address
       - ROCKET_PORT=3014
+      - ENABLE_API=true
     volumes:
       - /docker/bitwarden/bw-data:/data
