@@ -3,7 +3,7 @@ version: '3'
  
 services:
   jupyter_db:
-    image: mysql:latest
+    image: mysql:8.0.34
     restart: always
     container_name: jupyter_db
     environment:
