@@ -2,35 +2,15 @@ version: '3.8'
 
 services:
   rustpad:
-    image: ekzhang/rustpad:latest
+    image: hanisntsolo/rustpad:latest
     container_name: rustpad
     restart: always
     ports:
       - "3030:3030"
     volumes:
-      - "./rustpad_data:/app/data"
+      - "/media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/jupyter/notebooks/jupyter-lab/rustpad_db/:/persist"
     environment:
       - EXPIRY_DAYS=365
-      - RUSTPAD_DATA_DIR=/app/data
-      - RUSTPAD_PORT=3030
-      - RUSTPAD_DEBUG=1
-      - RUSTPAD_LOG_LEVEL=debug
-      - RUSTPAD_ENABLE_HTTPS=true
-      - RUSTPAD_HTTPS_CERT_FILE=/app/data/rustpad.cert
-      - RUSTPAD_HTTPS_KEY_FILE=/app/data/rustpad.key
-      - RUSTPAD_DATABASE_URL=postgres://postgres:password@db:5432/rustpad
-    depends_on:
-      - db
-
-  db:
-    image: postgres:latest
-    restart: always
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-    environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: password
-      POSTGRES_DB: rustpad
-
-volumes:
-  postgres_data:
+      - PORT=3030
+      - RUST_LOG=OFF #TRACE,OFF,error,warn,info,debug
+      - SQLITE_URI=sqlite:///persist/rustpad.db
